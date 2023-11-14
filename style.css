@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+div {
+    margin: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+}
