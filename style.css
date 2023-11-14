@@ -6,8 +6,8 @@
 
 
 div {
-    margin: 20px 0 0 20px;
     display: flex;
     flex-direction: column;
     max-width: 150px;
+    margin: 20px 0 0 20px;
 }

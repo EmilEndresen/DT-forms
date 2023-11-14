@@ -35,21 +35,22 @@
             <label for="password">Password</label>
             <input
                type="password"
-               id="password"
+               required
                name="password"
                minlength="8"
+               id="password"
                maxlength="16"
-               required
             />
-         </div>
-         <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required />
          </div>
 
          <div>
             <label for="favcolor">Select your favorite color</label>
             <input type="color" id="favcolor" name="favcolor" />
+         </div>
+
+         <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
          </div>
          <div>
             <label for="birthday">Birthday:</label>
@@ -62,6 +63,31 @@
                required
             />
          </div>
+         <div>
+            <label for="month">Birth month and year</label>
+            <input
+               type="month"
+               id="month"
+               name="month"
+               min="1994-10"
+               max="2050-06"
+            />
+         </div>
+         <div>
+            <label for="favnumber">Favorite number between 1 and 10</label>
+            <input
+               type="number"
+               id="favnumber"
+               name="favnumber"
+               min="1"
+               max="10"
+            />
+         </div>
+         <div>
+            <label for="human">Human?</label>
+            <input type="checkbox" id="human" name="human" checked required />
+         </div>
+
          <div>
             <input type="submit" />
          </div>
