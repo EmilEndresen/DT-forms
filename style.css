@@ -4,10 +4,34 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
 
 div {
     display: flex;
+    max-width: 160px;
     flex-direction: column;
-    max-width: 150px;
     margin: 20px 0 0 20px;
+}
+
+textarea {
+    resize: none;
+}
+
+.main-layout {
+    display: flex;
+    flex-direction: row;
 }

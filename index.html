@@ -7,8 +7,49 @@
       <link rel="stylesheet" href="style.css" />
    </head>
    <body>
+      <h1>Intro til forms i HTML</h1>
       <form>
+         <div class="main-layout">
+            <div>
+               <!-- First name div -->
+               <div>
+                  <label for="fname">First name</label>
+                  <input type="text" id="fname" name="fname" />
+               </div>
+               <!-- Last name div -->
+               <div>
+                  <label for="lname">Last name</label>
+                  <input type="text" name="lname" id="lname" />
+               </div>
+            </div>
+
+            <div>
+               <div>
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" />
+               </div>
+
+               <div>
+                  <label for="tel">Phone number</label>
+                  <input type="tel" name="tel" id="tel" />
+               </div>
+            </div>
+
+            <div>
+               <label for="textarea">Your message</label>
+               <textarea
+                  name="textarea"
+                  id="textarea"
+                  cols="60"
+                  rows="5"
+               ></textarea>
+            </div>
+         </div>
+
          <div>
+            <input type="submit" />
+         </div>
+         <!-- <div>
             <label for="fname">First name:</label>
             <input
                type="text"
@@ -74,6 +115,18 @@
             />
          </div>
          <div>
+            <label for="time">Choose a time</label>
+            <input
+               type="time"
+               id="time"
+               name="time"
+               value="13:30"
+               min="12:00"
+               max="23:00"
+            />
+         </div>
+
+         <div>
             <label for="favnumber">Favorite number between 1 and 10</label>
             <input
                type="number"
@@ -89,8 +142,41 @@
          </div>
 
          <div>
-            <input type="submit" />
+            <label for="radio">Select one</label>
+            <input type="radio" name="radio" id="radio" checked />
+            <input type="radio" name="radio" id="radio" />
          </div>
+
+         <div>
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" name="volume" min="0" max="50" />
+         </div>
+
+         <div>
+            <label for="homepage">Add your homepage</label>
+            <input type="url" id="homepage" name="homepage" />
+         </div>
+
+         <div>
+            <label for="cars">What is your favorite car</label>
+            <input list="cars" />
+            <datalist id="cars">
+               <option value="AUDI"></option>
+               <option value="BMW"></option>
+               <option value="MAZDA"></option>
+               <option value="NISSAN"></option>
+               <option value="SUBARU"></option>
+               <option value="JEEP"></option>
+            </datalist>
+         </div>
+         <div>
+            <label for="food">Favorite food</label>
+            <select name="food" id="food">
+               <option value="" style="display: none"></option>
+               <option value="beef">Beef</option>
+               <option value="bolognese">Bolognese</option>
+            </select>
+         </div> -->
       </form>
    </body>
 </html>
