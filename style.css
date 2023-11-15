@@ -22,16 +22,54 @@ select {
 
 div {
     display: flex;
-    max-width: 160px;
     flex-direction: column;
     margin: 20px 0 0 20px;
 }
 
 textarea {
     resize: none;
+    max-width: 420px;
+}
+
+.submit-btn {
+    max-width: 100px;
 }
 
 .main-layout {
     display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
     flex-direction: row;
+}
+
+input,
+textarea {
+    outline: transparent;
+}
+
+input {
+    padding: 2px;
+    /* font-weight: 700;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: purple 2px dotted; */
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.submit-btn {
+    margin-left: 35px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color: black;
 }
